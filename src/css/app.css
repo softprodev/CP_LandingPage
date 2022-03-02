@@ -4,11 +4,6 @@
   margin-left: auto;
 }
 
-.together h3, .together h2, .roadmap__block-year, .c-title {
-  font-family: "CheddarGothicSans-Italic";
-  font-style: italic;
-}
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -162,74 +157,33 @@
   content: "\e002";
 }
 
-
 @font-face {
-  font-family: "PoppinsBold";
-  src: url("fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "CheddarGothicSansItalic";
+  src: url("fonts/CheddarGothicSans-Italic.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
-  font-weight: normal;
-}
-
-
-@font-face {
-  font-family: "PoppinsRegular";
-  src: url("fonts/Poppins-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "PoppinsItalic";
-  src: url("fonts/Poppins-Italic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "CheddarGothicSans";
   src: url("fonts/CheddarGothicSans.ttf") format("truetype");
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "CheddarGothicSans";
-  src: url("fonts/CheddarGothicSans-Italic.ttf") format("truetype");
+  font-family: "CheddarGothicSerifItalic";
+  src: url("fonts/CheddarGothicSerif-Italic.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "CheddarGothicStencil";
-  src: url("fonts/CheddarGothicStencil.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "CheddarGothicStencil";
-  src: url("fonts/CheddarGothicStencil-Italic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "CheddarGothicSlab";
-  src: url("fonts/CheddarGothicSlab.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "CheddarGothicSlab";
-  src: url("fonts/CheddarGothicSlab-Italic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "CheddarGothicSerif";
   src: url("fonts/CheddarGothicSerif.ttf") format("truetype");
-  font-style: normal;
   font-weight: normal;
-}
-@font-face {
-  font-family: "CheddarGothicSerif";
-  src: url("fonts/CheddarGothicSerif-Italic.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-display: swap;
 }
 html,
 body {
@@ -260,7 +214,7 @@ body {
   margin: 0;
   padding: 105px 0 0;
   background-color: #131313;
-  background-image: url("../img/img-bg@2x.png");
+  background-image: url("img/img-bg@2x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -390,10 +344,6 @@ picture {
 }
 
 /* CUSTOM CURSOR */
-/* * {
-  cursor: none !important;
-} */
-
 #overlay {
   z-index: 990;
   overflow: hidden;
@@ -450,6 +400,7 @@ picture {
   color: #ffffff;
   line-height: 1.1;
   letter-spacing: 10px;
+  font-family: "CheddarGothicSansItalic", sans-serif;
   text-shadow: 3px 3px 0px #131313, 5px 5px 0px #4a4a4a;
 }
 @media screen and (max-width: 1439px) {
@@ -655,7 +606,7 @@ picture {
 }
 .header:before {
   z-index: 1;
-  background-image: url("../img/img-header-path-line@2x.png");
+  background-image: url("img/img-header-path-line@2x.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -664,7 +615,7 @@ picture {
   z-index: 0;
   opacity: 0;
   visibility: hidden;
-  background-image: url("../img/img-bg@2x.png");
+  background-image: url("img/img-bg@2x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -849,7 +800,7 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/path-line-horizontal@2x.png");
+  background-image: url("img/path-line-horizontal@2x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -889,7 +840,7 @@ picture {
   height: calc(100% - 105px);
   padding: 50px 15px;
   background-color: #131313;
-  background-image: url("../img/img-bg@2x.png");
+  background-image: url("img/img-bg@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1005,14 +956,14 @@ picture {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../img/togrther-flame-left@2x.png");
+  background-image: url("img/togrther-flame-left@2x.png");
 }
 .welcome__visual > div:nth-of-type(2) {
   right: 0;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
-  background-image: url("../img/togrther-flame-right@2x.png");
+  background-image: url("img/togrther-flame-right@2x.png");
 }
 .welcome__wrapper {
   z-index: 2;
@@ -1352,6 +1303,7 @@ picture {
   max-width: 100%;
 }
 .roadmap__block-year {
+  font-family: "CheddarGothicSansItalic";
   font-size: 80px;
   color: #5c5c5c;
   line-height: 1.2;
@@ -1561,7 +1513,7 @@ picture {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1023px) {
   .together {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1824,6 +1776,7 @@ picture {
 .together h2 {
   z-index: -1;
   position: relative;
+  font-family: "CheddarGothicSansItalic";
   font-size: 45px;
   color: #ffffff;
   line-height: 1.2;
@@ -1842,6 +1795,7 @@ picture {
 .together h3 {
   z-index: -1;
   position: relative;
+  font-family: "CheddarGothicSansItalic";
   font-size: 180px;
   color: #ffffff;
   line-height: 1;

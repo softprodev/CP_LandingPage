@@ -4,13 +4,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-.c-title,
-.roadmap__block-year,
-.together h2,
-.together h3 {
-  font-family: CheddarGothicSans-Italic;
-  font-style: italic;
-}
 
 /*!
  * Hamburgers
@@ -103,7 +96,12 @@
 }
 @font-face {
   font-family: iconFont;
-  src: url(../fonts/iconFont.ttf) format("truetype");
+  src: url(../fonts/iconFont.eot);
+  src: url(../fonts/iconFont.eot?#iefix) format("eot"),
+    url(../fonts/iconFont.woff2) format("woff2"),
+    url(../fonts/iconFont.woff) format("woff"),
+    url(../fonts/iconFont.ttf) format("truetype"),
+    url(../fonts/iconFont.svg#iconFont) format("svg");
 }
 .icon-check-mark:before,
 .icon-discord:before {
@@ -123,16 +121,25 @@
   content: "\e002";
 }
 @font-face {
-  font-family: CheddarGothicSans;
-  src: url(../fonts/CheddarGothicSans.ttf) format("truetype");
+  font-family: CheddarGothicSansItalic;
+  src: url(../fonts/CheddarGothicSans-Italic.woff2) format("woff2"),
+    url(../fonts/CheddarGothicSans-Italic.woff) format("woff"),
+    url(../fonts/CheddarGothicSans-Italic.ttf) format("truetype"),
+    url(../fonts/CheddarGothicSans-Italic.svg#CheddarGothicSans-Italic)
+      format("svg");
+  font-weight: 500;
   font-style: normal;
-  font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: CheddarGothicSans;
-  src: url(../fonts/CheddarGothicSans-Italic.ttf) format("truetype");
-  font-style: normal;
+  src: url(../fonts/CheddarGothicSans.woff2) format("woff2"),
+    url(../fonts/CheddarGothicSans.woff) format("woff"),
+    url(../fonts/CheddarGothicSans.ttf) format("truetype"),
+    url(../fonts/CheddarGothicSans.svg#CheddarGothicSans) format("svg");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 body,
 html {
@@ -266,9 +273,6 @@ picture {
 .c-grid-fluid {
   max-width: 100%;
 }
-* {
-  cursor: none !important;
-}
 #overlay {
   z-index: 990;
   overflow: hidden;
@@ -314,6 +318,7 @@ picture {
   color: #fff;
   line-height: 1.1;
   letter-spacing: 10px;
+  font-family: CheddarGothicSansItalic, sans-serif;
   text-shadow: 3px 3px 0 #131313, 5px 5px 0 #4a4a4a;
 }
 @media screen and (max-width: 1439px) {
@@ -1116,6 +1121,7 @@ picture {
   max-width: 100%;
 }
 .roadmap__block-year {
+  font-family: CheddarGothicSansItalic;
   font-size: 80px;
   color: #5c5c5c;
   line-height: 1.2;
@@ -1315,7 +1321,7 @@ picture {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1023px) {
   .together {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -1553,6 +1559,7 @@ picture {
 .together h2 {
   z-index: -1;
   position: relative;
+  font-family: CheddarGothicSansItalic;
   font-size: 45px;
   color: #fff;
   line-height: 1.2;
@@ -1571,6 +1578,7 @@ picture {
 .together h3 {
   z-index: -1;
   position: relative;
+  font-family: CheddarGothicSansItalic;
   font-size: 180px;
   color: #fff;
   line-height: 1;

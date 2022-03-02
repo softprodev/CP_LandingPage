@@ -46,55 +46,55 @@
           };
         }();
 
-/* harmony default export */ __webpack_exports__["default"] = (Common);
+  /* harmony default export */ __webpack_exports__["default"] = (Common);
 
         /***/
-      })
+})
 
     /******/
-  });
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
+});
+  /************************************************************************/
+  /******/ 	// The module cache
+  /******/ 	var __webpack_module_cache__ = {};
+  /******/
+  /******/ 	// The require function
+  /******/ 	function __webpack_require__(moduleId) {
+  /******/ 		// Check if module is in cache
+  /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+  /******/ 		if (cachedModule !== undefined) {
+  /******/ 			return cachedModule.exports;
       /******/
-    }
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
+}
+  /******/ 		// Create a new module (and put it into the cache)
+  /******/ 		var module = __webpack_module_cache__[moduleId] = {
+  /******/ 			// no module.id needed
+  /******/ 			// no module.loaded needed
+  /******/ 			exports: {}
       /******/
-    };
-/******/
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
+};
+  /******/
+  /******/ 		// Execute the module function
+  /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+  /******/
+  /******/ 		// Return the exports of the module
+  /******/ 		return module.exports;
     /******/
-  }
-/******/
-/************************************************************************/
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function () {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function (exports) {
-/******/ 			if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+}
+  /******/
+  /************************************************************************/
+  /******/ 	/* webpack/runtime/make namespace object */
+  /******/ 	!function () {
+  /******/ 		// define __esModule on exports
+  /******/ 		__webpack_require__.r = function (exports) {
+  /******/ 			if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+  /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
         /******/
-      }
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+}
+  /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
       /******/
-    };
+};
     /******/
-  }();
+}();
   /******/
   /************************************************************************/
   var __webpack_exports__ = {};
@@ -104,7 +104,7 @@
       !*** ./src/js/app.js ***!
       \***********************/
     __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common/common */ "./src/js/common/common.js");
+  /* harmony import */ var _common_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common/common */ "./src/js/common/common.js");
     // EVENT LISTENER - LOAD
     // ========================================
 
@@ -117,6 +117,7 @@
           return window.pageYOffset || document.documentElement.scrollTop;
         },
           shrinkHeader = 5;
+
         var scroll = getCurrentScroll();
         scroll >= shrinkHeader ? document.querySelector('#header').classList.add('is-fixed') : document.querySelector('#header').classList.remove('is-fixed');
         window.addEventListener('scroll', function () {
@@ -139,7 +140,7 @@
             ev.currentTarget.classList.add('is-active');
 
             if (ev.currentTarget.closest('.header')) {
-              document.querySelectorAll('.header__nav a[href="' + this.getAttribute('href') + '"]')[0].classList.add('is-active');
+              document.querySelectorAll('.header__nav a[href="' + this.getAttribute('href') + '"]')[1].classList.add('is-active');
             }
 
             document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -164,9 +165,6 @@
       };
 
       var floatingAnimation = function floatingAnimation() {
-
-        console.log("floatingAnimation called:");
-
         function random(min, max) {
           return min + Math.random() * (max - min);
         }
@@ -203,8 +201,6 @@
       };
 
       var gaspAnimation = function gaspAnimation() {
-        console.log("gas animation called:");
-
         $(".main").mousemove(function (e) {
           parallaxIt(e, "#welcome", "#welcomeAnimationImg1", -5);
           parallaxIt(e, "#welcome", "#welcomeAnimationImg2", 5);
@@ -322,7 +318,6 @@
         };
         cursor.init();
       };
-
 
       var hamburgerMenu = function hamburgerMenu() {
         var btn = document.querySelector("[hamburger-js]"),

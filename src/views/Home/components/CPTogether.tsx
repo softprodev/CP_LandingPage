@@ -22,15 +22,15 @@ const CPTogether = () => {
                     </div>
                 </div>
                 <div>
-                    <h2 className="wow animate__animated animate__fadeInUp" data-wow-duration="1.25s">We believe in a brand governed copy</h2>
-                    <h2 className="wow animate__animated animate__fadeInUp" data-wow-duration="1.25s">by it’s tokenholders!</h2>
-                    <h3 className="wow animate__animated animate__fadeInUp" data-wow-duration="1.25s">Let’s all</h3>
-                    <h3 className="wow animate__animated animate__fadeInUp" data-wow-duration="1.25s"><span>GROW</span></h3>
+                    <h2>We believe in a brand governed copy</h2>
+                    <h2>by it’s tokenholders!</h2>
+                    <h3>Let’s all</h3>
+                    <h3><span>GROW</span></h3>
                 </div>
             </div>
             <div className="c-grid">
                 <div className="together__wrapper">
-                    <h3 className="wow animate__animated animate__fadeInUp" data-wow-duration="1.25s"><span>TOGETHER!</span></h3>
+                    <h3><span>TOGETHER!</span></h3>
                 </div>
             </div>
         </section>
